@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		img {max-width:100%;}
+		#photoRotator {margin:0 auto; position:relative; width:100%;}
+	</style>
+</head>
+<body>
+	<div id="photoRotator"></div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="../src/jquery.pictator.js"></script>
+	<script>
+		$('#photoRotator').pictator({
+			picURLs: new Array(
+				'img/001.jpg',
+				'img/002.jpg',
+				'img/003.jpg',
+				'img/004.jpg',
+				'img/005.jpg'
+			),
+			slideDuration: 3,
+			transitionDuration: 1.0,
+			zIndex: 3
+		});
+	</script>
+</body>
+</html>
